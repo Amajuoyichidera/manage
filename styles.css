@@ -47,7 +47,7 @@ ul li:hover {
 #hamburger-icon div {
   width: 35px;
   height: 3px;
-  background-color: yellow;
+  background-color: #242D52;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -78,7 +78,7 @@ ul li:hover {
   position: absolute;
   top: 50px;
   left: 0;
-  height: calc(100vh - 50px);
+  height: 40vh;
   width: 100%;
 }
 
@@ -96,11 +96,121 @@ ul li:hover {
   padding-top: 100px;
 }
 
+/* .sec3 {
+  background: url(/images/bg-tablet-pattern.svg);
+} */
+
+.sec4 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 70px;
+}
+
 .get {
   background-color:#F2613B;
   color: white;
-  box-shadow: -18px 39px 11px -23px rgba(254,204,197,1);
+  box-shadow: 9px 17px 7px -4px rgba(254,204,197,1);
+ }
+
+ .simp {
+  background-color: white;
+  color: #F2613B;
+  box-shadow: 9px 17px 7px -4px rgba(254,204,197,1);
+ }
+
+ .bg img {
+  height: 80vh;
+  /* position: absolute; */
+  margin-left: -150px;
+  margin-bottom: -100px;
+ }
+
+.one {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
+.btn {
+  background-color:#F2613B;
+  color: white;
+  border-radius: 30px;
+  padding: 8px;
+  margin-top: -10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.two {
+  margin-left: 100px;
+}
+
+.sec5 {
+  display: flex;
+  gap: 20px;
+}
+
+.sec5 img {
+  height: 10vh;
+}
+
+.sec6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sec6 img {
+  margin-bottom: 20px;
+  margin-top: -50px;
+}
+
+.con {
+  background-color: #FAFAFA;
+  color: #9B9CA2;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.what {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec7 {
+  display: flex;
+  justify-content: space-around;
+  height: 30vh;
+  background-color: #F3613C;
+  margin-top: 150px;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  background-color: #1E1E26;
+  color: white;
+  padding-bottom: 60px;
+}
+
+figure {
+  display: flex;
+  gap: 10px;
+  padding-top: 70px;
+}
+
+.home {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
 
 @media only screen and (max-width: 600px) {
   header nav {
@@ -112,6 +222,33 @@ ul li:hover {
   }
 
   ul {
-    background-color: blue;
+    background-color: #F2613B;
+  }
+
+  .btn1 {
+    display: none;
+  }
+
+  .sec1 {
+    flex-direction: column-reverse;
+  }
+  .sec4 {
+    flex-direction: column;
+    background-color: #FFF0EC;
+  }
+
+  .bg {
+    display: none;
+  }
+
+  .sec7 {
+    flex-direction: column;
+  }
+  .go {
+    flex-direction: column;
+    display: flex;
+  }
+  .home {
+    flex-direction: column;
   }
 }
