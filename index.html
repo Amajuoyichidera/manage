@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Manage landing page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -94,15 +95,13 @@
     </section>
     </section>
     </section>
-    <section class="bg">
-      <img src="/images/bg-tablet-pattern.svg" alt="">
-    </section>
+
 
 
     <section>
-      <h2 class="what pb-5"> What they’ve said</h2>
-      <section class="sec5">
-        <section class="con">
+      <h2 class="what font-bold text-4xl"> What they’ve said</h2>
+      <section class="sec5 slideshow-container">
+        <section class="con mySlides fade">
           <section class="sec6">
             <img src="/images/avatar-anisha.png" alt="">
           <h5>Anisha Li</h5>
@@ -111,7 +110,7 @@
             “Manage has supercharged our team’s workflow. The ability to maintain 
             visibility on larger milestones at all times keeps everyone motivated.”</p>
         </section>
-        <section class="con">
+        <section class="con mySlides fade">
           <section class="sec6">  
             <img src="/images/avatar-ali.png" alt="">
           <h5>Ali Bravo</h5>
@@ -120,7 +119,7 @@
             Manage. There is no more cross-channel confusion and everyone is much 
             more focused.”</p>
         </section>
-        <section class="con">
+        <section class="con mySlides fade">
           <section class="sec6">
             <img src="/images/avatar-richard.png" alt="">
             <h5>Richard Watts</h5>
@@ -129,7 +128,7 @@
             “Manage allows us to provide structure and process. It keeps us organized 
             and focused. I can’t stop recommending them to everyone I talk to!”</p>
         </section>
-        <section class="con">
+        <section class="con mySlides fade">
           <section class="sec6">
             <img src="/images/avatar-shanai.png" alt="">
           <h5>Shanai Gough</h5>
@@ -137,20 +136,36 @@
           <p> “Their software allows us to track, manage and collaborate on our projects 
             from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
         </section>
+
+        
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
       </section>
-      <button class="what get rounded-3xl p-2 pl-4 pr-4">Get Started</button>
+
+
+      <!-- The dots/circles -->
+<div class="dot1" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+        <button class="get1 rounded-3xl p-2 pl-4 pr-4">Get Started</button>
+
     </section>
 
     <section class="sec7">
-      <h2>Simplify how your team <br> works today.
-      </h2>
-      <button class="simp rounded-3xl p-2 pl-4 pr-4"> Get Started</button>
+      <h2 class="text-3xl font-bold">Simplify how your team <br> works today.</h2>
+      <button class="simp simp1 rounded-3xl p-2 pl-4 pr-4"> Get Started</button>
     </section>
 
 
     <footer>
-      <section>
-        <img src="/images/logo.svg" alt="">
+      <section class="logo">
+        <img class="log" src="/images/logo.svg" alt="">
         <figure>
           <img src="/images/icon-facebook.svg" alt="">
           <img src="/images/icon-youtube.svg" alt="">
@@ -159,19 +174,23 @@
           <img src="/images/icon-instagram.svg" alt="">
         </figure>
       </section>
-      <section class="home">
-        <p>Home</p>
-        <p>Pricing</p>
-        <p>Products</p>
-        <p>About Us</p>
+      <section class="hom">
+        <section class="home">
+          <p>Home</p>
+          <p>Pricing</p>
+          <p>Products</p>
+          <p>About Us</p>
+        </section>
+        <section class="home">
+          <p>Careers</p>
+          <p>Community</p>
+          <p>Privacy Policy</p>
+        </section>
+
       </section>
-      <section class="home">
-        <p>Careers</p>
-        <p>Community</p>
-        <p>Privacy Policy</p>
-      </section>
+      
       <section class="go">
-        <input class="rounded-3xl p-4" type="text" name="" placeholder="Updates in your inbox ..." id="">
+        <input class="rounded-3xl p-2 mr-3" type="text" name="" placeholder="Updates in your inbox ...">
         <button class="btn">Go</button>
       </section>
     </footer>
